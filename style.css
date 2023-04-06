@@ -1,0 +1,19 @@
+body{
+    background-color: aquamarine;
+    width: auto;
+}
+
+#wrap{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+}
+
+#submit{
+    background-color: black;
+    color: white;
+    height: 36px;
+    border: none;
+    border-radius: 5px;
+}

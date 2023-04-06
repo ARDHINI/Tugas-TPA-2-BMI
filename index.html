@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung BMI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="wrap">
+        <h1>Hitung BMI</h1>
+        <p>Masukkan berat badan anda dan tinggi banda anda</p>
+        <label for="berat">Berat Badan (KG)</label><br>
+        <input type="number" id="berat" placeholder="Isi dengan angka dalam kilogram. contoh : 50"><br>
+        <label for="tinggi">Tinggi Badan (CM)</label><br>
+        <input type="number" id="tinggi" placeholder="Isi dengan angka dalam centimeter. contoh : 160"><br>
+        <button id="submit" onclick="hitungBMI()">Hasil BMI</button>
+        <p>
+            Hasil BMI anda
+            <strong>
+                <span id="result-number">0</span>
+            </strong>
+            yang berarti berat badan anda
+            <strong>
+                <span id="result-text">-</span>
+            </strong>
+        </p>
+
+    </div>
+</body>
+<script src="script.js"></script>
+</html>
