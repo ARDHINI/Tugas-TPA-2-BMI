@@ -9,7 +9,7 @@
 </head>
 <body>
     <div id="wrap">
-        <h1>Hitung BMI</h1>
+        <h1>Selamat datang di <span>Hitung BMI</span></h1>
         <p>Masukkan berat badan anda dan tinggi banda anda</p>
         <label for="berat">Berat Badan (KG)</label><br>
         <input type="number" id="berat" placeholder="Isi dengan angka dalam kilogram. contoh : 50"><br>
@@ -20,14 +20,21 @@
             Hasil BMI anda
             <strong>
                 <span id="result-number">0</span>
-            </strong>
-            yang berarti berat badan anda
-            <strong>
+            </strong>yang berarti berat badan anda<strong>
                 <span id="result-text">-</span>
             </strong>
         </p>
-
     </div>
+    <div class="categoryBMI">
+            <span>BMI Categories</span>
+            <ol>
+                <li>Underweight =< 18,5</li>
+                <li>Normal weight = 18.5 - 24.9</li>
+                <li>Overweight = 25 - 29.9</li>
+                <li>Obesity= BMI of 30 or greaterObesity = BMI of 30 or greater</li>
+            </ol>
+    </div>
+
 </body>
 <script src="script.js"></script>
 </html>

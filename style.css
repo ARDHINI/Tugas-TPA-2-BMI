@@ -1,19 +1,58 @@
-body{
-    background-color: aquamarine;
-    width: auto;
+:root{
+    --gradient: linear-gradient(102.4deg,rgba(253,189,85,1) 7.8%, rgba(249,131,255,1) 100.3%);
 }
-
+body{
+    min-height: 100vh;
+    background-color: #fff;
+    background-image: var(--gradient );
+    background-size: 200%;
+    background-position: right;
+    width: 30%;
+    padding: 25px;
+    margin: auto;
+    display: block;
+    animation:change-bg 2.5s infinite alternate;
+}
 #wrap{
     display: flex;
     flex-direction: column;
     justify-content: center;
     width: 500px;
 }
-
+#wrap span{
+    color: blue;
+}
 #submit{
     background-color: black;
     color: white;
     height: 36px;
     border: none;
     border-radius: 5px;
+}
+
+.categoryBMI{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 500px;
+}
+.categoryBMI span{
+    color:blue;
+    font-size: 20px;
+}
+.categoryBMI{
+    color: black;
+    font-size: 15px;
+    left: 10px;
+}
+
+@keyframes change-bg{
+    0% {
+        background-position: left;
+    }
+
+
+    100% {
+        background-position: right;
+    }
 }
